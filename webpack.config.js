@@ -27,22 +27,22 @@ module.exports = {
         test: /\.js$/,
         loaders: ['eslint'],
         include: [
-          path.resolve(__dirname, "src"),
-        ],
+          path.resolve(__dirname, 'src')
+        ]
       }
     ],
     loaders: [
       {
         loaders: ['react-hot', 'babel-loader'],
         include: [
-          path.resolve(__dirname, "src"),
+          path.resolve(__dirname, 'src')
         ],
         test: /\.js$/,
-        plugins: ['transform-runtime'],
+        plugins: ['transform-runtime']
       },
       {
         test:   /\.css$/,
-        loader: "style-loader!css-loader!postcss-loader"
+        loader: 'style-loader!css-loader!postcss-loader'
       }
     ]
   },
