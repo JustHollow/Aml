@@ -7,8 +7,6 @@ export default class Ball extends Component {
   }
   DrawBall() {
     let self = this
-    // speed = self.state.speed;
-
     let requestAnimFrame = (function() {
       return window.requestAnimationFrame || window.webkitRequestAnimationFrame || window.mozRequestAnimationFrame || window.oRequestAnimationFrame || window.msRequestAnimationFrame ||
           function(callback) {
@@ -21,8 +19,6 @@ export default class Ball extends Component {
   var ballRadius = 10;
   var x = canvas.width / 2;
   var y = canvas.height - 30;
-  // var dx = self.state.speed;
-  // var dy = -self.state.speed;
 
   function drawBall() {
       ctx.beginPath();
@@ -118,9 +114,6 @@ export default class Ball extends Component {
       // wheelDelta не дает возможность узнать количество пикселей
       // onwheel || MozMousePixelScroll || onmousewheel
       var delta = e.deltaY || e.detail || e.wheelDelta;
-
-      // var info = document.getElementById('delta');
-
       var modSpeed = +self.state.speed - delta / 100;
       self.setState({speed: modSpeed})
       speedUpdate()

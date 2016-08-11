@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import {NavItem, Nav } from 'react-bootstrap'
-// import { Link } from 'react-router'
 import { LinkContainer, IndexLinkContainer } from 'react-router-bootstrap';
 
 export default class Menu extends Component {

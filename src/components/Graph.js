@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-// import {Chart} from 'react-d3-core'
 import {LineChart, BarChart} from 'react-d3-basic'
 import { connect } from 'react-redux'
 import { bindActionCreators } from 'redux'
@@ -86,7 +85,6 @@ export default class Graph extends Component {
 }
 
 function mapStateToProps(state) {
-  // console.log(state);
   return {
     graph: state.graph
   }
