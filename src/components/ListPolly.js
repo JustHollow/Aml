@@ -78,7 +78,7 @@ export default class SortableList extends Component {
     const { data } = this.state;
     const listItems = data.map((item, i) => {
       return (
-        <li className='react-sortable' data-id={i} key={i}
+        <li className='list-group-item' data-id={i} key={i}
           draggable='true'
           onDragEnd={this.dragEnd.bind(this)}
           onDragStart={this.dragStart.bind(this)}
@@ -89,19 +89,19 @@ export default class SortableList extends Component {
     })
     const listItemsEdit = data.map((item, i) => {
       return (
-        <li className='react-sortable' data-id={i} key={i}
+        <li className='list-group-item' data-id={i} key={i}
           draggable='true'
           onDragEnd={this.dragEnd.bind(this)}
           onDragStart={this.dragStart.bind(this)}
           onDoubleClick={this.DoubleClick.bind(this)}>
-          <input ref={'inp'+i} data-id={i} key={i} value={item} onChange={this.handleChange.bind(this, i)}/>
+          <input className='form-control' ref={'inp'+i} data-id={i} key={i} value={item} onChange={this.handleChange.bind(this, i)}/>
         </li>
       )
     })
 
     return (
       <div>
-        <ul onDragOver={this.dragOver.bind(this)}>
+        <ul className='list-group' onDragOver={this.dragOver.bind(this)}>
           {this.state.edit ? listItemsEdit: listItems}
         </ul>
         <Button  bsStyle='success' onClick={this.Edit.bind(this)}>Edit</Button>

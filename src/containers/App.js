@@ -6,9 +6,11 @@ import * as pageActions from '../actions/PageActions'
 
 class App extends Component {
   render() {
-    return <div className='row'>
+    return <div className='container'>
       <Menu/>
-      {this.props.children}
+      <div className='row'>
+        {this.props.children}
+      </div>
     </div>
   }
 }
