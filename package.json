@@ -4,7 +4,8 @@
   "description": "test",
   "main": "index.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "deploy": "set NODE_ENV=production && webpack -p --config webpack.production.config.js"
   },
   "author": "JustHollow",
   "license": "MIT",
