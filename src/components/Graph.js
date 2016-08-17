@@ -10,7 +10,6 @@ import { Button } from 'react-bootstrap'
 export default class Graph extends Component {
   constructor(){
     super()
-    this.state = {type: 'line'};
   }
   handleClick(){
     let { GRAPH_BAR, GRAPH_LINE } = this.props.pageActions
