@@ -16,3 +16,5 @@ npm  i webpack -g (optional)
 for dev -> npm start -> localhost:3000
 
 for prod -> npm deploy -> index.html & static/bundle.js is ready to deploy
+
+## [GH PAGES](https://justhollow.github.io/Aml/)
