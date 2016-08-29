@@ -20,6 +20,7 @@ render(
         <Route path='graph'component={Graph}/>
         <Route path='ball'component={Ball}/>
       </Route>
+      <Route path='*' component={App}/>
     </Router>
   </Provider>,
   document.getElementById('root')
